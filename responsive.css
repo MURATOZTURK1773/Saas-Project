@@ -1,0 +1,33 @@
+@media screen and ( max-width: 768px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: right;
+  }
+
+  body {
+    max-width: 768px;
+  }
+
+  .header-bottom {
+    display: flex; 
+    flex-direction: column; 
+    background-color: rgb(255, 255, 255);
+    margin-top: 70px;
+    background-image: linear-gradient(252deg, azure, transparent), linear-gradient(56deg, #e7e7e7, transparent);
+  }
+
+  .header-wrapper button { display: block; }
+
+
+ 
+}

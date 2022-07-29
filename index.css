@@ -1,7 +1,7 @@
 body {
   max-width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
-  
 }
 
 .header-container {
@@ -65,6 +65,8 @@ body {
    width: 160px;
    margin-right: 420px;
 } 
+
+.header-wrapper button { display: none; }
 
 .header-wrapper, .header-wrapper ul {
   display: flex;
@@ -630,6 +632,7 @@ opacity: 0.2;
   border: 1px solid rgb(211, 211, 211);
   margin-right: 8px;
   border-radius: 0.4em;
+  background-color: #fff;
 }
 
 .hire-us-right .input {

@@ -8,7 +8,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="./fontawesome/all.min.css">
 
   </head>
@@ -33,28 +35,34 @@
         <div class="website-logo">
           <img src="./saas-project-assets/project_logo/logo.svg" alt="project_logo">
         </div>
-        <div class="header-wrapper">
-          <ul>
-            <li>
-              <a href="https://www.google.com">Home</a>
-            </li>
-            <li>
-              <a href="https://www.google.com">Features</a>
-            </li>
-            <li>
-              <a href="https://www.google.com">Learn</a>
-            </li>
-            <li>
-              <a href="https://www.google.com">Pricing</a>
-            </li>
-            <li>
-              <a href="https://www.google.com">Hire Us</a>
-            </li>
-            <li class="buy-now">
-              <a href="https://www.google.com"><b>Buy Now</b></a>
-            </li>
-          </ul>
-        </div> 
+        <div id="pageTop"></div> <!-- NEW -->
+        <nav id="topNav" class="navbar nav"><!-- NEW -->
+          <div class="header-wrapper"> <!-- use header-wrapper instead of container in JS-->
+            <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+              <span>&#9776;</span>
+            </button>
+            <ul>
+              <li>
+                <a href="https://www.google.com">Home</a>
+              </li>
+              <li>
+                <a href="https://www.google.com">Features</a>
+              </li>
+              <li>
+                <a href="https://www.google.com">Learn</a>
+              </li>
+              <li>
+                <a href="https://www.google.com">Pricing</a>
+              </li>
+              <li>
+                <a href="https://www.google.com">Hire Us</a>
+              </li>
+              <li class="buy-now">
+                <a href="https://www.google.com"><b>Buy Now</b></a>
+              </li>
+            </ul>
+          </div> 
+        </nav> 
       </section>
   
       <section class="header-bottom">
@@ -268,10 +276,10 @@
             <input type="text" placeholder="  Company website">
           </div>
           <div>
-            <select class="input" name="budget" id="">
+            <select style="margin-left: 0px;" class="input" name="budget" id="">
               <option value="budget" selected>Budget</option>
             </select>
-            <select class="input" name="country" id="">
+            <select style="margin-left: 1px;" class="input" name="country" id="">
               <option value="country"selected>Country</option>
             </select>
           </div>
@@ -339,6 +347,30 @@
         <div class="copyright-bottom">When you visit or interact with our sites, services or tools, we or our authorized service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</div>
       </div>
     </section>  
+
+
+    <script>
+      const nav = document.getElementById("topNav");
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("sticky");
+        } else {
+          nav.classList.remove("sticky");
+        }
+      }
+  
+  
+  
+      const navButton = document.querySelector('button[aria-expanded]');
+  
+      function toggleNav({ target }) {
+        const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+        navButton.setAttribute('aria-expanded', !expanded)
+      }
+  
+      navButton.addEventListener('click', toggleNav);
+    </script>
+  
         
 
     
