@@ -8,15 +8,27 @@
   }
 
   [aria-expanded="true"] ~ ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    width: 100%;
-    text-align: right;
+    width: 100px;
+    margin-left: -21px;
   }
 
   body {
-    max-width: 768px;
+    max-width: 758px;
+    min-width: 758px;
   }
+
+  .header-wrapper ul a {
+    display: flex;
+    flex-direction: row;
+    width: 79px;
+    margin-left: -31px;
+    margin-top: 9px;
+  }
+
+  .header-wrapper ul .buy-now { margin-left: -25px; }
 
   .header-bottom {
     display: flex; 
@@ -27,6 +39,32 @@
   }
 
   .header-wrapper button { display: block; }
+
+  .key-benefits-main {
+    display: grid;
+    grid-template-areas: 
+    "div div"
+    "div div";
+  }
+
+  .why-front-content div h2 div span {
+    position: absolute;
+  }
+
+  .get-started,
+  .why-front-content,
+  .why-front-bottom, 
+  .companies .company-logos,
+  .pricing-main,
+  .hire-us .main,
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  .header-top .main-demo,
+  .nav-right { display: none; }
+
+  .header .navbar nav { margin-left: 50px; }
 
 
  
