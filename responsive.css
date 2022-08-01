@@ -21,18 +21,24 @@
     min-width: 758px;
   }
 
-  .header-wrapper ul a {
+  .header .header-wrapper ul li a {
     display: flex;
     flex-direction: row;
     width: 79px;
     margin-left: -31px;
     margin-top: 9px;
-    border: 1px solid red;
+    border: 1px solid #fff;
+    background-color: rgb(52, 123, 250);
     padding: 4px 20px;
     border-radius: 2em;
+    color: #fff;
   }
 
   .header-wrapper ul .buy-now { margin-left: -25px; }
+
+  .header .header-wrapper ul .buy-now a {
+    padding: 4px 20px;
+    margin-left: -24px; }
 
   .header-bottom {
     display: flex; 
@@ -42,7 +48,10 @@
     background-image: linear-gradient(252deg, azure, transparent), linear-gradient(56deg, #e7e7e7, transparent);
   }
 
-  .header-wrapper button { display: block; }
+  .header-wrapper button {
+    margin-top: 13px;
+    display: block;
+  }
 
   .key-benefits-main {
     display: grid;
@@ -51,9 +60,29 @@
     "div div";
   }
 
+  .why-front-content div { margin-bottom: 20px; }
+
   .why-front-content div h2 div span {
     position: absolute;
+    margin-left: -60px;
+    margin-top: -7px;
   }
+
+  .why-front-content div h2 hr {
+    width: 26px;
+    margin-left: -51px;
+    margin-top: 13px;
+    background-color: #6c2c1b;
+    position: absolute;
+    transform: rotate(90deg);
+    opacity: 0.4;
+  }
+
+  .why-front-content div h2 { margin-left: 135px; }
+
+  .why-front-content .combined-components h2 { margin-left: 180px; }
+   
+  .why-front-content .combined-components hr { margin-left: -51px; }
 
   .get-started,
   .why-front-content,
@@ -74,6 +103,108 @@
     margin-left: 130px;
   }
 
+  .why-front-bottom {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .why-front-bottom .dots {
+    margin-top: -60px;
+    position: absolute;
+    margin-left: -494px;
+  }
+
+  .why-front-bottom .dots-bottom {
+    margin-top: 126px;
+    position: absolute;
+    margin-right: 449px;
+  }
+
+  .why-front-main { margin: 0 70px; } 
+
+  /**.why-front hr { display: none; } **/
+  .why-front-main a { margin-top: 100px; }
+
+  .why-front-bottom .hubspot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 126px;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .why-front-bottom .hubspot br { display: none; }
+
+  .why-front .companies { margin-top: 0; }
+
+  .why-front .companies .uber, .slack { display: none; }
+
+  .companies .company-logos {
+    gap: 100px;
+    flex-direction: row;
+    margin-left: 100px;
+  }
+
+  .pricing { margin-top: -63px; }
+
+  .hr { margin: 60px 0; }
+
+  .pricing-main { align-items: center; }
+
+  .pricing-main .price-card {
+    margin-left: 18px;
+    height: auto;
+    width: 500px;
+  }
+
+  .pricing .pricing-features {
+    margin-top: 40px;
+    margin-right: 71px;
+    margin-left: 100px;
+  }
+
+  .hire-us {
+    margin: 0 10px;
+    border-radius: 0.3em;
+  }
+
+  .hire-us .main {
+    padding: 0;
+    gap: 30px;
+  }
+
+  .main .hire-us-left { 
+    width: 95%;
+    padding: 0px 20px;
+  }
+
+  .hire-us-left hr { width: 330px; }
+
+  .hire-us-left div em br { display: none; }
+
+
+  .hire-us-right {
+    width: 605px;
+    height: 408px;
+  }
+
+  .hire-us .hire-us-right { margin: 15px 15px; }
+
+  .hire-us-right div input, .input { width: 270px; }
+
+  .hire-us-right .input { width: 276px; }
+
+  .hire-us-right textarea { width: 554px; }
+
+  .hire-us-right .checkbox input { margin-top: -11px; }
+
+  .hire-us-right a { padding: 10px 250px; }
+
+  .hire-us-right .checkbox p { font-size:  13px; }
+
+  
 
 
 
