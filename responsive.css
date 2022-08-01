@@ -204,7 +204,43 @@
 
   .hire-us-right .checkbox p { font-size:  13px; }
 
-  
+  .footer-wrapper { margin: 0 100px; }
+
+  .footer-wrapper .front-left,
+  .front-right {
+    display: flex;
+    gap: 100px;
+    margin-left: 0;
+  }
+
+  .footer hr { margin: 40px auto; }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 100px;
+  }
+
+  .footer-bottom-left p { margin-left: 5px; }
+
+  .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px 100px;
+  }
+
+  .footer-copyright .copyright-top {
+    text-align: start;
+    margin-bottom: 20px;
+  }
+
+  .copyright-bottom {
+    margin-bottom: 50px;
+    text-align: start;
+  }
+ 
 
 
 

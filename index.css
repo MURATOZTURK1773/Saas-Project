@@ -84,6 +84,10 @@ body {
    color: #6d6c6c;
 }
 
+.header .header-wrapper ul li a:hover {
+  border-bottom: 1px solid rgb(101, 139, 115);
+}
+
 .header .header-wrapper ul .buy-now {
    padding-right: 0;
    padding-left: 20px;
@@ -723,6 +727,14 @@ opacity: 0.2;
     margin: 100px auto;
  }
 
+ .footer-wrapper .front-left,
+ .front-right {
+  display: flex;
+  gap: 100px;
+ }
+
+ .front-right { margin-left: 40px; }
+
 /** FOOTER-BOTTOM**/
 
 .footer-bottom {
@@ -766,7 +778,7 @@ opacity: 0.2;
 }
 
 .copyright-bottom { 
-  margin-bottom: initial;
+  margin-bottom: 50px;
 }
 
 
