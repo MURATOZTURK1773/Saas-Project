@@ -1,3 +1,59 @@
+@media screen and ( max-width: 1210px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+    margin-left: 565px;
+    margin-top: 5px;
+  }
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100px;
+    margin-left: -21px;
+    margin-top: -9px;
+  }
+
+  .header .header-wrapper ul li { margin-left: 435px; }
+
+  .header-wrapper button { display: block; }
+
+  .header .header-wrapper ul li a {
+    display: flex;
+    flex-direction: row;
+    width: 79px;
+    margin-left: -31px;
+    margin-top: 9px;
+    border: 1px solid #fff;
+    background-color: rgb(52, 123, 250);
+    padding: 4px 20px;
+    border-radius: 2em;
+    color: #fff;
+  }
+
+  .header-wrapper ul .buy-now {
+    margin-left: -25px;
+  }
+
+  .header .header-wrapper ul .buy-now a {
+    padding: 4px 20px;
+    margin-left: -50px;
+  }
+
+  .header .header-wrapper ul li {
+    margin-left: 0 
+  }
+
+  .header .header-wrapper ul li {
+    margin-left: 440px;
+  }
+
+}  
+
 @media screen and ( max-width: 768px) {
   [aria-controls="navbarDropdown"] {
     display: block;
@@ -21,6 +77,14 @@
     min-width: 758px;
   }
 
+  .header .header-wrapper ul { flex-wrap: wrap; }
+
+  .header .header-wrapper ul li {
+    margin-left: 0;
+  }
+
+  .header .header-wrapper ul .buy-now { margin-left: -25px; }
+
   .header .header-wrapper ul li a {
     display: flex;
     flex-direction: row;
@@ -34,11 +98,14 @@
     color: #fff;
   }
 
-  .header-wrapper ul .buy-now { margin-left: -25px; }
+  .header-wrapper ul .buy-now {
+    margin-left: -25px;
+  }
 
   .header .header-wrapper ul .buy-now a {
     padding: 4px 20px;
-    margin-left: -24px; }
+    margin-left: -24px;
+  }
 
   .header-bottom {
     display: flex; 
