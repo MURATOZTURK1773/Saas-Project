@@ -390,7 +390,7 @@
   body {
     max-width: 375px;
     min-width: 375px;
-    padding-left: 10px;
+    padding-left: 50px;
   }
 
   .header-container { padding-right: 0; }
