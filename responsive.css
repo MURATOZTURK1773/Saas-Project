@@ -390,7 +390,7 @@
   body {
     max-width: 375px;
     min-width: 375px;
-    padding-left: 50px;
+    margin: 0;
   }
 
   .header-container { padding-right: 0; }
@@ -423,14 +423,18 @@
 
   /** KEY BENEFITS **/
 
-  .key-benefits { margin-top: 50px; }
+  .key-benefits {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+  }
 
   .key-benefits-main {
     display: flex;
     flex-direction: column;
   }
 
-  .key-benefits-main div { width: 350px; }
+  .key-benefits-main div { width: 320px; }
 
   .key-benefits-main img { width: 70px; }
   
@@ -438,12 +442,12 @@
 
   .key-benefits-main p, a { font-size: x-large; }
   
-  .get-started { margin: 50px -10px; }
+  .get-started { margin: 50px 0; }
 
   .get-started .get-started-left {
     padding: 9px;
     font-size: x-large;
-    width: 375px;
+    width: 331px;
   }
 
   .get-started-right {
@@ -451,7 +455,7 @@
   }
 
   .get-started-right img {
-    width: 350px;
+    width: 330px;
     margin-top: -50px;
     margin-left: 44px;
   }
@@ -465,8 +469,8 @@
   .why-front-top p {
     font-size: x-large;
     opacity: 0.7;
-    width: 420px;
-    margin: 20px -20px;
+    width: 360px;
+    margin: 20px 8px;
 }
 
   .why-front-content {
@@ -484,8 +488,8 @@
   .why-front-bottom .dots { display: none; }
 
   .why-front-bottom .dots-bottom {
-    margin-top: 25px;
-    margin-right: 440px;
+    margin-top: -10px;
+    margin-right: 395px;
   }
 
   .dots-bottom-top {
@@ -498,10 +502,13 @@
   }
 
   
-  .why-front-bottom .person-three { border-radius: 0.5em; }
+  .why-front-bottom .person-three {
+    width: 330px;
+    border-radius: 0.5em;
+  }
 
   .why-front-bottom .hubspot {
-    margin-top: 50px;
+    margin-top: 10px;
     padding: 60px 63px;
   }
 
@@ -513,8 +520,8 @@
   }
 
   .hubspot p {
-    font-size: xx-large;
-    width: 435px;
+    font-size: x-large;
+    width: 330px;
   }
 
   .hubspot div {
@@ -524,24 +531,33 @@
   }
 
   .companies .company-logos{
-    gap: 60px;
-    margin-left: -20px;
+    gap: 30px;
+    margin: 0 8px;
+  }
+
+  .companies .company-logos img {
+    margin: 0 10px;
+    width: 80px;
   }
 
   .companies .company-logos .weebly,
   .spotify { display: none; }
 
   .companies .company-logos .uber, .slack { display: block; }
+  
+  .pricing .pricing-top { margin-bottom: 0; }
+
+  .pricing-top h2 { font-size: 2em; }
 
   .pricing .pricing-top p {
     width: 406px;
-    font-size: x-large;
+    font-size: larger;
   }
 
   .pricing-main .price-card {
-    width: 330px;
+    width: 245px;
     height: 345px;
-    margin: 0;
+    margin: 10px 20px;
   }
 
   .price-card p {
@@ -557,7 +573,7 @@
   }
 
   .pricing .pricing-features {
-    margin: 40px 0;
+    margin: 40px 20px;
     flex-direction: column;
   }
 
@@ -574,16 +590,21 @@
   .pricing-features .features-left p,
   .pricing-features .features-right p { font-size: x-large; }
 
+  .pricing-features .features-left p br,
+  .pricing-features .features-right p br { display: none; }
+
+  .pricing-features .features-right p { margin-bottom: 0; }
+ 
   .hire-us {
-    width: 400px;
-    margin-left: -15px;
+    width: 350px;
+    margin: 0 12px;
   }
 
   .hire-us .hire-us-right {
     padding: 15px 10px;
-    width: 301px;
+    width: 260px;
     height: 825px;
-    margin: 20px 39px;
+    margin: 20px 34px;
   }
 
   .hire-us-right h2 { padding: 0 20px; }
@@ -591,14 +612,14 @@
   .hire-us-right div { flex-direction: column; }
 
   .hire-us-right div input {
-    width: 260px;
+    width: 220px;
     height: 40px;
     margin: 10px 10px;
     font-size: larger;
   }
 
   .hire-us-right .input {
-    width: 265px;
+    width: 227px;
     height: 45px;
     font-size: large;
     margin-left: 0px;
@@ -608,7 +629,7 @@
   .hire-us-right div .country {
     margin-left: 1px;
     margin-top: 15px;
-    width: 265px;
+    width: 227px;
     height: 45px;
     background-color: #fff;
     border: 1px solid rgb(211, 211, 211);
@@ -619,7 +640,7 @@
   .hire-us-right .second-div { margin-top: -20px; }
 
   .hire-us-right textarea {
-    width: 259px;
+    width: 222px;
     margin-left: 19px;
   }
 
@@ -649,11 +670,11 @@
   }
 
   .hire-us-right a {
-    padding: 15px 80px;
+    padding: 15px 58px;
     margin: 0 15px;
   }
 
-  .footer { margin: 70px 0; }
+  .footer { margin: 70px 20px; }
 
   .footer-wrapper,
   .footer-bottom { margin: 0; }
@@ -674,16 +695,16 @@
 
   .footer-bottom-right {
     display: flex;
-    gap: 20px;
+    gap: 10px;
   } 
 
   .footer-bottom-right img {
-    margin-left: 233px;
+    margin-left: 192px;
     margin-top: 6px;
   }
 
   .footer-copyright {
-    margin: 30px -15px;
+    margin: 30px 6px;
     font-size: larger;
   }
 }
