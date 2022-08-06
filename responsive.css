@@ -423,6 +423,11 @@
     height: 270px;
   }
 
+  .why-front-main img {
+    width: 330px;
+    margin: 0 50px;
+  }
+
   .why-front-main a { margin-right: -20px; }
 
   .why-front-bottom .dots { display: none; }
