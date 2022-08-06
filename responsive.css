@@ -644,11 +644,11 @@
 
   .footer-bottom-right {
     display: flex;
-    gap: 15px;
+    gap: 30px;
   } 
 
   .footer-bottom-right img {
-    margin-left: 210px;
+    margin-left: 271px;
     margin-top: 6px;
   }
 
