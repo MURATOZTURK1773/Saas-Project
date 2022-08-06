@@ -307,9 +307,392 @@
     margin-bottom: 50px;
     text-align: start;
   }
- 
-
-
-
- 
 }
+/**
+@media screen and ( max-width: 575px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100px;
+    margin-left: -21px;
+    margin-top: -9px;
+  }
+
+  body {
+    max-width: 300px;
+    min-width: 370px;
+  }
+
+  .header .website-logo img { margin-right: 30px; }
+
+} 
+**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and ( max-width: 575px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100px;
+    margin-left: -21px;
+    margin-top: -9px;
+  }
+
+  body {
+    max-width: 375px;
+    min-width: 375px;
+    padding-left: 10px;
+  }
+
+  .header-container { padding-right: 0; }
+
+  .header .website-logo img { margin-right: 180px; }
+
+  .header-wrapper { margin-left: -150px; }
+
+  .header-bottom-part-one { margin: 0 15px; }
+
+  .header-bottom-part-two .google-a,
+  .header-bottom-part-two .calendar-wrapper {
+    display: none;
+  }
+
+  .header-bottom-part-two { margin-left: 60px; }
+
+  .header-bottom-part-two .paypal-google-wrapper { margin-left: -50px; }
+
+  .header-bottom-part-two .paypal-wrapper { margin-bottom: 30px; }
+
+  .atlassian-google-a-wrapper {
+    margin-top: 51px;
+    margin-left: -40px;
+  }
+
+  .header-bottom-part-two .weave { margin-left: -14px; }
+
+  .asana-calendar-wrapper { margin-left: -70px; }
+
+  /** KEY BENEFITS **/
+
+  .key-benefits { margin-top: 50px; }
+
+  .key-benefits-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .key-benefits-main div { width: 350px; }
+
+  .key-benefits-main img { width: 70px; }
+  
+  .key-benefits-main h3 { font-size: xx-large; }
+
+  .key-benefits-main p, a { font-size: x-large; }
+  
+  .get-started { margin: 50px -10px; }
+
+  .get-started .get-started-left {
+    padding: 9px;
+    font-size: x-large;
+    width: 375px;
+  }
+
+  .get-started-right {
+    margin-top: 80px;
+  }
+
+  .get-started-right img {
+    width: 350px;
+    margin-top: -50px;
+    margin-left: 44px;
+  }
+
+  .why-front {
+    margin-top: 100px;
+  }
+
+  .why-front-top h2 { font-size: 2.5em; }
+
+  .why-front-top p {
+    font-size: x-large;
+    opacity: 0.7;
+    width: 420px;
+    margin: 20px -20px;
+}
+
+  .why-front-content {
+    margin-left: -50px;
+    margin-bottom: 0;
+  }
+
+  .why-front-main { 
+    margin: 0 -25px;
+    height: 270px;
+  }
+
+  .why-front-main a { margin-right: -20px; }
+
+  .why-front-bottom .dots { display: none; }
+
+  .why-front-bottom .dots-bottom {
+    margin-top: 25px;
+    margin-right: 440px;
+  }
+
+  .dots-bottom-top {
+    margin-top: -10px;
+    margin-left: -4px;
+  }
+
+  .dots-bottom .dots-bottom-top span, .dots-bottom .dots-bottom-bottom span {
+    margin-right: 27px;
+  }
+
+  
+  .why-front-bottom .person-three { border-radius: 0.5em; }
+
+  .why-front-bottom .hubspot {
+    margin-top: 50px;
+    padding: 60px 63px;
+  }
+
+  .hubspot img { width: 140px; }
+
+  .hubspot h3 {
+    margin-top: -15px;
+    font-size: xx-large;
+  }
+
+  .hubspot p {
+    font-size: xx-large;
+    width: 435px;
+  }
+
+  .hubspot div {
+    margin-top: -30px;
+    font-size: larger;
+    opacity: 0.7;
+  }
+
+  .companies .company-logos{
+    gap: 60px;
+    margin-left: -20px;
+  }
+
+  .companies .company-logos .weebly,
+  .spotify { display: none; }
+
+  .companies .company-logos .uber, .slack { display: block; }
+
+  .pricing .pricing-top p {
+    width: 406px;
+    font-size: x-large;
+  }
+
+  .pricing-main .price-card {
+    width: 330px;
+    height: 345px;
+    margin: 0;
+  }
+
+  .price-card p {
+    font-size: x-large;
+    opacity: 0.7;
+  }
+
+  .price-card a { padding: 13px 30px; }
+
+  .price-card div {
+    font-size: larger;
+    opacity: 0.7;
+  }
+
+  .pricing .pricing-features {
+    margin: 40px 0;
+    flex-direction: column;
+  }
+
+  .pricing-features .features-left .cancel-anytime,
+  .pricing-features .features-right .money-back { margin-top: -30px; }
+
+  .pricing-features .features-left img,
+  .pricing-features .features-right img {
+    width: 55px;
+  }
+
+  .pricing-features h2 { font-size: xx-large; }
+
+  .pricing-features .features-left p,
+  .pricing-features .features-right p { font-size: x-large; }
+
+  .hire-us {
+    width: 400px;
+    margin-left: -15px;
+  }
+
+  .hire-us .hire-us-right {
+    padding: 15px 10px;
+    width: 301px;
+    height: 825px;
+    margin: 20px 39px;
+  }
+
+  .hire-us-right h2 { padding: 0 20px; }
+
+  .hire-us-right div { flex-direction: column; }
+
+  .hire-us-right div input {
+    width: 260px;
+    height: 40px;
+    margin: 10px 10px;
+    font-size: larger;
+  }
+
+  .hire-us-right .input {
+    width: 265px;
+    height: 45px;
+    font-size: large;
+    margin-left: 0px;
+    margin-top: -10px;
+  }
+
+  .hire-us-right div .country {
+    margin-left: 1px;
+    margin-top: 15px;
+    width: 265px;
+    height: 45px;
+    background-color: #fff;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 0.4em;
+    font-size:  large;
+  }
+
+  .hire-us-right .second-div { margin-top: -20px; }
+
+  .hire-us-right textarea {
+    width: 259px;
+    margin-left: 19px;
+  }
+
+  .hire-us-right .third-div {
+    font-size: large;
+    margin-left: 10px;
+    opacity: 0.7;
+  }
+
+  .hire-us-right .checkbox { flex-direction: row; }
+
+  .hire-us-right .checkbox input {
+    margin-top: 25px;
+    position: absolute;
+    margin-left: 4px;
+  }
+  
+  .checkbox p br { display: none; }
+
+  .checkbox p span { text-decoration: underline; }
+
+  .hire-us-right .checkbox p {
+    font-size: 19px;
+    padding: 0 0px;
+    margin-left: 19px;
+    opacity: 0.7;
+  }
+
+  .hire-us-right a {
+    padding: 15px 80px;
+    margin: 0 15px;
+  }
+
+  .footer { margin: 70px 0; }
+
+  .footer-wrapper,
+  .footer-bottom { margin: 0; }
+
+  .front img { width: 150px; }
+
+  .footer-wrapper .front,
+  .front-left,
+  .front-right,
+  .footer-bottom { font-size: x-large; }
+
+  .footer-wrapper .front-left,
+  .front-right {gap: 60px; }
+
+  .front-left .company div span { font-size: 17px; }
+
+  .front-right { margin-top: -20px; }
+
+  .footer-bottom-right {
+    display: flex;
+    gap: 20px;
+  } 
+
+  .footer-bottom-right img {
+    margin-left: 233px;
+    margin-top: 6px;
+  }
+
+  .footer-copyright {
+    margin: 30px -15px;
+    font-size: larger;
+  }
+}
+
+
+
+
+
+
+
+
+
