@@ -330,7 +330,7 @@
   body {
     max-width: 375px;
     min-width: 375px;
-    margin: 0 5px;
+    margin: 0;
   }
 
   .header-container { padding-right: 0; }
