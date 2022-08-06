@@ -334,7 +334,10 @@
     margin-left: 10px;
   }
 
-  .header-container { padding-right: 0; }
+  .header-container { 
+    margin-left: 10px;
+    padding-right: 0;
+  }
 
   .header .website-logo img { margin-right: 180px; }
 
