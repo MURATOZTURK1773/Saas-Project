@@ -331,6 +331,7 @@
     max-width: 375px;
     min-width: 375px;
     margin: 0;
+    margin-left: 10px;
   }
 
   .header-container { padding-right: 0; }
