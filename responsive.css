@@ -656,6 +656,10 @@
     margin: 30px 6px;
     font-size: larger;
   }
+
+  .footer-bottom-right select {
+    padding-left: 40px;
+  }
 }
 
 
