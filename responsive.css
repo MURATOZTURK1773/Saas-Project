@@ -438,7 +438,7 @@
 
   .why-front-bottom .dots-bottom {
     margin-top: -10px;
-    margin-right: 395px;
+    margin-right: 328px;
   }
 
   .dots-bottom-top {
@@ -527,7 +527,7 @@
   }
 
   .pricing-features .features-left .cancel-anytime,
-  .pricing-features .features-right .money-back { margin-top: -30px; }
+  .pricing-features .features-right .money-back { margin-top: 18px; }
 
   .pricing-features .features-left img,
   .pricing-features .features-right img {
