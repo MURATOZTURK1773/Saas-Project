@@ -648,6 +648,11 @@ opacity: 0.2;
   height: 36px;
 }
 
+.hire-us-right .country {
+  width: 145px;
+  background-color: #fff;
+}
+
 .hire-us-right textarea {
   width: 295px;
   margin-left: 9px;
@@ -754,10 +759,11 @@ opacity: 0.2;
 .footer-bottom-right { font-size: smaller; }
 
 .footer-bottom-right i, select {
-  border: 1px solid #f6fafd;
+  width: auto;
+  border: 1px solid rgb(211, 211, 211);
   padding: 3px 5px;
-  background-color: #e8eced;
-  border-radius: 0.2em;
+  background-color: rgb(239,239,239);
+  border-radius: 0.4em;
   margin-left: 5px;
 }
 
