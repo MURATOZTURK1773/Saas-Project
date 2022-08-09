@@ -610,6 +610,7 @@
   .header-container { 
     margin-left: 10px;
     padding-right: 0;
+    width: 400px;
   }
 
   .header .website-logo img { margin-right: 180px; }
@@ -775,6 +776,8 @@
     width: 406px;
     font-size: larger;
   }
+
+  .pricing-main { margin-left: 0;}
 
   .pricing-main .price-card {
     width: 245px;
