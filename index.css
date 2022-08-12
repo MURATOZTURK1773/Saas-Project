@@ -11,8 +11,9 @@ body {
 }
 
 .header-bottom {
-   background-image: linear-gradient(252deg, azure, transparent),
-                     linear-gradient(355deg, #a39c9c, transparent);
+  height: 600px;
+  background-image: linear-gradient(252deg, azure, transparent),
+                    linear-gradient(355deg, #a39c9c, transparent);
 }
 
 .header-top {
@@ -212,7 +213,8 @@ body {
   border-radius: 100%;
   box-shadow: 0 10px 25px lightgrey;
   margin-top: 185px;
-  margin-left: -15px;
+  margin-left: 237px;
+  position: absolute;
 }
 
 .paypal-google-wrapper,
@@ -224,7 +226,8 @@ body {
 .asana-calendar-wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: 107px;
+  margin-left: 400px;
+  position: absolute;
 }
 
 .calendar-wrapper { margin-bottom: 8px; }
@@ -790,6 +793,116 @@ opacity: 0.2;
 .copyright-bottom { 
   margin-bottom: 50px;
 }
+
+/** ANIMATIONS**/
+
+.atlassian-wrapper,
+.paypal-google-wrapper,
+.atlassian-google-a-wrapper,
+.asana-calendar-wrapper
+ {
+  animation: bounce 1.5s;
+}
+
+@keyframes bounce {
+  10%{
+    height: 90px;
+    width: 90px;
+  }
+
+  30%{
+    height: 90px;
+    width: 90px;
+  }
+
+  50%{
+    height: 90px;
+    width: 90px;
+    transform: translateX(10px);
+  }
+
+  75%{
+    height: 90px;
+    width: 90px;
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.paypal-wrapper { 
+  position: absolute;
+  margin-top: 242px;
+}
+
+.atlassian-wrapper { position: absolute;}
+
+.header-bottom-part-two .google-a { margin-top: 300px;}
+
+.header-bottom-part-one { 
+  margin-right: 200px;
+  width: 355px;
+}
+
+.weave { animation: rotation 2s linear;}
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(359deg);
+  }
+}
+/**
+.asana-calendar-wrapper { animation: rotation 1.8s linear;}
+@keyframes rotation {
+  from {
+    transform: rotate(359deg);
+}
+to {
+    transform: rotate(0deg);
+}
+}
+**/
+
+
+
+
+
+.asana-calendar-wrapper {
+  animation: moveToRight 1.5s ease-in-out,
+             moveToLeft 1.5s ease-in-out;
+  animation-delay: 50ms;
+}
+@keyframes moveToRight {
+  0% {
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+
+
+
+
 
 
 
