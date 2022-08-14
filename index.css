@@ -306,6 +306,11 @@ body {
   font-size: small;
 }
 
+.responsive,
+.premium,
+.customizable,
+.documentation { transition: 2s; }
+
 .responsive:hover,
 .premium:hover {
   background-color: rgb(183, 243, 237);
