@@ -252,7 +252,7 @@ body {
 .atlassian-google-a-wrapper {
   margin-top: 51px;
   margin-left: 41px;
- }
+}
   /** KEY BENEFITS **/ 
 .key-benefits { margin-top: 150px; }
 
@@ -850,6 +850,7 @@ body {
               moveToLeft 1.5s ease-in-out;
   animation-delay: 50ms;
 }
+
 @keyframes moveToRight {
   0% {
     transform: translateX(0px);
